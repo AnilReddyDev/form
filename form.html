@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="container">
+            <h1>SURVEY FORM</h1>
+            <div class="form-con" id="formId">
+                <form action="">
+                <div class="box-input">
+                    <p>Name</p>
+                <input type="text" name="name" id="myText">
+                </div>
+                <div class="box-input">
+                    <p>Email</p>
+                <input type="email" name="email" id="myemail">
+                </div>
+                <div class="box-input">
+                    <p>Age</p>
+                <input type="number" name="" id="myage">
+                </div>
+                <div class="box-input">
+                    <p>describe youself in 1 word?</p>
+                <input type="text" name="" id="mydesc">
+                </div>
+                <div class="box-input radio-input">
+                    <p>Would you recommend TalentSprint to a friend</p>
+                <div style="display: flex;justify-content: flex-start;align-items: center;">
+                    <input type="radio" name="yes" id="" >YES 
+                </div>
+                <div style="display: flex;justify-content: flex-start;align-items: center;">
+                    <input type="radio" name="yes" id="">NO
+                </div>
+                <div style="display: flex;justify-content: flex-start;align-items: center;">
+                    <input type="radio" name="yes" id="">MAYBE
+                </div>
+                </div>
+                <div class="box-input">
+                    
+                </div>
+                <button  onclick="myFunction()">Submit</button>
+                <div>
+                    <p id="name"></p>
+                    <p id="email"></p>
+                    <p id="age"></p>
+                    <!-- <p id="hello">hello</p> -->
+
+                </div>
+            </div>
+            </div>
+    </form>
+</body>
+<script>
+    var val = document.querySelector('input').value;
+    function myFunction(event) {
+  var x = document.getElementById("myText").value;
+  document.getElementById("name").innerHTML = x;
+  var y = document.getElementById("myemail").value;
+  document.getElementById("email").innerHTML = y;
+  var z = document.getElementById("myage").value;
+  document.getElementById("age").innerHTML = z;
+  var k = document.getElementById("mydesc").value;
+  document.getElementById("age").innerHTML = k;
+  alert("Name :"+x+"  "+"email :"+y+"    "+"age :"+z+"   "+"describe :"+k)
+ 
+}
+
+
+
+</script>
+</html>

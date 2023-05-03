@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackey&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Slackey', cursive;
+}
+.container{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(105, 243, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-con{
+width: 60vw;
+height: 900px;
+box-shadow: 3px 3px 3px black;
+background-color: #fff;
+margin-top: 30px;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+}
+.box-input
+{
+    width: 50vw;
+    height: auto;
+    /* background-color: rgb(73, 45, 45); */
+    margin: 20px 1px;
+}
+p{
+    font-size: 25px;
+    font-weight: 500;
+}
+input{
+    width: 50vw;
+    height: 40px;
+    margin: 5px 1px;
+}
+h1{
+    font-size: 30px;
+    margin: 10px 1px;
+}
+.radio-input input{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    background-color: rgb(4, 255, 42);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    box-shadow: 3px 3px 3px black;
+
+    transition: box-shadow 0.1s linear;
+}
+button:hover{
+    box-shadow: none;
+    animation: move 0.1s linear  1 ;
+}
+@keyframes move {
+
+    100%{
+        transform: translateY(-2px);
+        /* transform: translateX(2px); */
+    }
+}
